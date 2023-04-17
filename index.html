@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <h1 class="main_heading">Payment Form</h1>
+    <hr>
+    <h2>User Information</h2>
+    <p>Name : <input type="text" placeholder="Soumili Dey"></p> 
+    <fieldset>
+        <legend>Gender</legend>
+         <input type="radio" value="male" name="gender"> Male <input type="radio" value="female" name="gender"> Female </fieldset>
+    <p>Address : <textarea id="address" name="address" rows="4" cols="50" placeholder="enter your address here"></textarea>
+        <p>Email : <input type="text"></p>
+        <p>Pincode : <input type="number"></p>
+        <h2>Payment Information</h2>
+        <p>Card Type <select name="card type">
+            <option value="ccn">Credit Card</option>
+            <option value="Debit card">Debit Card</option>
+            <option value="Net Banking">Net Banking</option>
+            <option value="UPI">UPI</option>
+        </select></p>
+        <img src="CreditCard.png" class="crecard"> <img src="debit-card.jpg" class="decard"> <img src="UPI_logo.jpg" class="uupi">
+        <p>Card Number : <input type="number" class="card number"></p>
+        <p>Expiry Date : <input type="date" class="date"></p>
+        <p>CVV : * <input type="password" class="CVV"></p>
+        <input type="submit" value="Pay Now">
+     </form>
+</body>
+</html>
